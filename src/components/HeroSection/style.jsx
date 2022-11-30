@@ -22,7 +22,7 @@ export const HeroContent = styled.div`
   }
 
   span {
-    background-image: linear-gradient(90deg, red, blue);
+    background-image: linear-gradient(90deg, #fe8dc6, #fed1c7);
     -webkit-background-clip: text;
     color: transparent;
   }

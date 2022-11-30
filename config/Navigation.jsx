@@ -17,24 +17,21 @@ export default {
       link: "/mentors",
     },
     {
-      id: "tracks",
-      name: "Tracks",
-      link: "/tracks",
+      id: "contactus",
+      name: "CONTACT US",
+      link: "/contactus",
     },
+
     {
-      id: "sponsors",
-      name: "Sponsors",
-      link: "/sponsors",
+      id: "login",
+      name: "LOGIN",
+      link: "/login",
     },
+
     {
-      id: "faq",
-      name: "FAQ",
-      link: "/faq",
-    },
-    {
-      id: "contact",
-      name: "Contact",
-      link: "/contact",
+      id: "register",
+      name: "REGISTER",
+      link: "/register",
     },
   ],
 };
