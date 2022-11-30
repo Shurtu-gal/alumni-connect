@@ -19,6 +19,7 @@ const AltNavBar = () => {
         backgroundColor: "var(--background-primary)",
         position: "sticky",
         top: "0",
+        zIndex: "1000",
       }}
     >
       <Contain>
@@ -40,8 +41,9 @@ const AltNavBar = () => {
                   to={`${id}`}
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-80}
                   duration={500}
+                  style={{ cursor: "pointer" }}
                 >
                   <p className="navLink">{name}</p>
                 </Link>

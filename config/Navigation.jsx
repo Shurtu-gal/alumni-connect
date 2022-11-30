@@ -7,34 +7,31 @@ export default {
       link: "/home",
     },
     {
+      id: "aboutus",
+      name: "ABOUT US",
+      link: "/about",
+    },
+    {
       id: "mentors",
       name: "MENTORS",
       link: "/mentors",
     },
     {
-      id: "speakers",
-      name: "Speakers",
-      link: "/speakers",
+      id: "contactus",
+      name: "CONTACT US",
+      link: "/contactus",
     },
+
     {
-      id: "tracks",
-      name: "Tracks",
-      link: "/tracks",
+      id: "login",
+      name: "LOGIN",
+      link: "/login",
     },
+
     {
-      id: "sponsors",
-      name: "Sponsors",
-      link: "/sponsors",
-    },
-    {
-      id: "faq",
-      name: "FAQ",
-      link: "/faq",
-    },
-    {
-      id: "contact",
-      name: "Contact",
-      link: "/contact",
+      id: "register",
+      name: "REGISTER",
+      link: "/register",
     },
   ],
 };
