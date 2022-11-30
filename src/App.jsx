@@ -23,12 +23,12 @@ const App = () => {
     <login.Provider value={{ isLogin, setLogin }}>
       <Router>
         <darkMode.Provider value={{ isDarkMode, handleToggle }}>
-          {/* {!isLogin && <AltNavBar />}
-          {!isLogin && <LandingPage />} */}
-          <Home/>
-          {isLogin && <NavBar />}
+          {isLogin && <AltNavBar />}
+          {isLogin && <LandingPage />}
+          {!isLogin && <NavBar />}
+          <Home />
         </darkMode.Provider>
-        {!isLogin && (
+        {isLogin && (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/mentors" element={<Mentors />} />
