@@ -7,14 +7,14 @@ export default {
       link: "/home",
     },
     {
+      id: "aboutus",
+      name: "ABOUT US",
+      link: "/about",
+    },
+    {
       id: "mentors",
       name: "MENTORS",
       link: "/mentors",
-    },
-    {
-      id: "speakers",
-      name: "Speakers",
-      link: "/speakers",
     },
     {
       id: "tracks",
