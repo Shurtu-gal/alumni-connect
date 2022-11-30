@@ -2,14 +2,14 @@ export default {
   title: "Navigation",
   navItems: [
     {
-      id: "prizes",
-      name: "Prizes",
-      link: "/prizes",
+      id: "home",
+      name: "HOME",
+      link: "/home",
     },
     {
-      id: "moments",
-      name: "Moments",
-      link: "/moments",
+      id: "mentors",
+      name: "MENTORS",
+      link: "/mentors",
     },
     {
       id: "speakers",

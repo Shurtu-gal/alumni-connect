@@ -1,14 +1,13 @@
 import React, { createContext, useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { NavBar } from "./components";
-import AltNavBar from "./components/AltNavBar";
+import { NavBar, AltNavBar } from "./components";
 import { ContactUs, Home, Mentors, Partners, LandingPage } from "./pages";
 
-let darkMode = createContext("true", () => {});
+let darkMode = createContext("false", () => {});
 let login = createContext("false", () => {});
 
 const App = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(true);
   const [isLogin, setLogin] = useState(false);
 
   const handleToggle = () => {

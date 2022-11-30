@@ -1,6 +1,6 @@
 /* eslint-disable indent */
 import styled from "styled-components";
-import { Container } from "../shared";
+import { Container } from "../../shared";
 
 export const Contain = styled(Container)`
   max-width: 100%;

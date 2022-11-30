@@ -1,7 +1,12 @@
 import React from "react";
+import Mentors from "../components/Mentors";
 
 const LandingPage = () => {
-  return <></>;
+  return (
+    <>
+      <Mentors id="mentors" />
+    </>
+  );
 };
 
 export default LandingPage;

@@ -127,7 +127,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -165,10 +165,11 @@ table {
 
 :root {
   --background-primary: #f7f7f7;
-  --background-secondary: #abadaf;
+  --background-secondary: #d0d1d2;
+  --background-tertiary: #0d272b;
   --text-color-primary: #000000;
-  --text-color-secondary: #5339c4;
-  --text-color-tertiary: ##bf4b7b;
+  --text-color-secondary: #abadaf;
+  --text-color-tertiary: #f7f7f7;
 
   --max-width: 83.5em;
   --max-width-bleed: 90%;
@@ -177,13 +178,14 @@ table {
   --font-weight-bold: 500;
   --font-weight-regular: 400;
   --font-weight-light: 300;
-  --font-family: 'Wotfard', 'Poppins', sans-serif;
-  --font-family-mono: 'Roboto Mono', 'Ubuntu Mono', 'monospace', 'sans-serif';
+  --font-family: "Wotfard", "Poppins", sans-serif;
+  --font-family-mono: "Roboto Mono", "Ubuntu Mono", "monospace", "sans-serif";
 }
 
 :root.change {
   --background-primary: #000000;
   --background-secondary: #181818;
+  --background-tertiary: #000000;
   --text-color-primary: #abadaf;
   --text-color-secondary: #f2f5f7;
   --text-color-tertiary: #ffffff;
@@ -193,5 +195,18 @@ body {
   background-color: var(--background-primary);
   color: var(--text-color-primary);
   font-family: var(--font-family);
-  padding: 0 0.7em;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.18;
+  font-weight: 700;
+  color: var(--text-color-tertiary);
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+  color: var(--text-color-secondary);
 }

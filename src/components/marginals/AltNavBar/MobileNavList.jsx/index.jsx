@@ -1,6 +1,6 @@
 import React from "react";
 import { NavList } from "./style";
-import nav from "../../../../config/content";
+import nav from "../../../../../config/Navigation";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const MobileNavList = () => {
