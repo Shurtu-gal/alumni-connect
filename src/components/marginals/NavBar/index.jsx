@@ -18,6 +18,7 @@ const NavBar = () => {
         backgroundColor: "var(--background-primary)",
         position: "sticky",
         top: "0",
+        zIndex: "1000",
       }}
     >
       <Contain>
