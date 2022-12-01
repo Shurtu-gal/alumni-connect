@@ -7,7 +7,9 @@ const MainDashboard = () => {
   return (
     <div className="MainDashboard">
          <h1>Dashboard</h1>
+           
          <Cards/>
+
          <Table/>
 
     </div>

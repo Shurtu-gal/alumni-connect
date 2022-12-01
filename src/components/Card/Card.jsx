@@ -15,9 +15,8 @@ const Card = (props) => {
    <div className="Card">
     <AnimateSharedLayout>
         {
-            expanded ? 
-            '<ExpandedCard param={props} setExpanded={()=>setExpanded(false)}/>':
-            <CompactCard param={props} />
+            expanded ? <ExpandedCard param={props} setExpanded={()=>setExpanded(false)}/>:
+            <CompactCard param={props} setExpanded={()=>setExpanded(true)} />
             
         }
     </AnimateSharedLayout>
@@ -26,7 +25,7 @@ const Card = (props) => {
 }
 
 //Compact Card
-function CompactCard({param}){
+function CompactCard({param,setExpanded}){
    const Png=param.png; 
    return(
          <div className="CompactCard"
@@ -35,7 +34,7 @@ function CompactCard({param}){
                 background: param.color.background,
                 boxShadow: param.color.boxShadow,
             }}
-           
+           onClick={setExpanded}
          >
             <div className="RadialBar">
                <CircularProgressbar
@@ -57,79 +56,34 @@ function CompactCard({param}){
    )
 }
 
-//Expanded Card
-// function ExpandedCard({param,setExpanded}){
-//     const data = {
-//         options: {
-//           chart: {
-//             type: "area",
-//             height: "auto",
-//           },
+// Expanded Card
+function ExpandedCard({param,setExpanded}){
     
-//           dropShadow: {
-//             enabled: false,
-//             enabledOnSeries: undefined,
-//             top: 0,
-//             left: 0,
-//             blur: 3,
-//             color: "#000",
-//             opacity: 0.35,
-//           },
-    
-//           fill: {
-//             colors: ["#fff"],
-//             type: "gradient",
-//           },
-//           dataLabels: {
-//             enabled: false,
-//           },
-//           stroke: {
-//             curve: "smooth",
-//             colors: ["white"],
-//           },
-//           tooltip: {
-//             x: {
-//               format: "dd/MM/yy HH:mm",
-//             },
-//           },
-//           grid: {
-//             show: true,
-//           },
-//           xaxis: {
-//             type: "datetime",
-//             categories: [
-//               "2018-09-19T00:00:00.000Z",
-//               "2018-09-19T01:30:00.000Z",
-//               "2018-09-19T02:30:00.000Z",
-//               "2018-09-19T03:30:00.000Z",
-//               "2018-09-19T04:30:00.000Z",
-//               "2018-09-19T05:30:00.000Z",
-//               "2018-09-19T06:30:00.000Z",
-//             ],
-//           },
-//         },
-//       };
 
-//     return(
-//         <div className="ExpandedCard"
-//             style=
-//             {{
-//                 background: param.color.background,
-//                 boxShadow: param.color.boxShadow,
-//             }}
+    return(
+        <div className="ExpandedCard"
+            style=
+            {{
+                background: param.color.background,
+                boxShadow: param.color.boxShadow,
+            }}
            
-//         >
-//             <div>
-//                 <UilTimes onClick={setExpanded}/>
-//             </div>
-//             <span>{param.title}</span>
+        >
+            <div>
+                <UilTimes onClick={setExpanded}/>
+            </div>
+            <span>{param.title}</span>
             
-//             <div className="chartContainer">
-//                 <Chart series={param.series} options={data.options} type="area" />
-//             </div>
-//             <span>Last 24 Hours</span>
-//         </div>
-//     )
-// }
+            <div className="chartContainer">
+            
+            <iframe loading="lazy" src="https://www.canva.com/design/DAFTgu7gG_Q/view?embed" >
+</iframe>
+
+                {/* <Chart series={param.series} options={data.options} type="area" /> */}
+            </div>
+            <span>Last 24 Hours</span>
+        </div>
+    )
+}
 
 export default Card

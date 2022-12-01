@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 import './Sidebar.css'
-
+import Logo from '../../images/logo.png'
 import {SideBarData} from "../../../config/DashBoard"
 
 const Sidebar = () => {
@@ -11,7 +11,7 @@ const Sidebar = () => {
     <div className='Sidebar'>
         <div className="logo">
             {/* Logo */}
-            {/* <img src={Logo} alt="" height="70px" width="70px"/> */}
+          <img src={Logo} alt="" height="70px" width="70px"/> 
             <span>
                 Al<span>u</span>mni
             </span>

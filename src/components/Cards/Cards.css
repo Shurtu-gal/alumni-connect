@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .Cards{
     display: flex;
     /* margin: 10px; */
@@ -5,7 +6,52 @@
 
 
 }
-
+.mentorConnectCard{
+    width: 100%;
+    color: white;
+    background: rgb(0, 0, 0);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    transition: all 300ms ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+}
+.mentorConnectCard>div h3{
+    color: white !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.mentorImage img{
+    
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    
+}
+.mentorConnectCard button{
+    background: rgb(4, 255, 4);
+    color: black;
+    border-radius: 30px;
+    border-style: none;
+    -webkit-box-shadow:0px 0px 45px 0px rgba(46,255,137,0.84);
+    -moz-box-shadow: 0px 0px 45px 0px rgba(46,255,137,0.84);
+    box-shadow: 0px 0px 45px 0px rgba(46,255,137,0.84);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    padding: 10px;
+    margin:20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .parentContainer{
     width:100%;
 }
