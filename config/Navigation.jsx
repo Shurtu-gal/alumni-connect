@@ -17,7 +17,7 @@ export default {
       link: "/mentors",
     },
     {
-      id: "contactus",
+      id: "contact",
       name: "CONTACT US",
       link: "/contactus",
     },
