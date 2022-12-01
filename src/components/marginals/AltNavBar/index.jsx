@@ -6,7 +6,7 @@ import MobileNavList from "./MobileNavList.jsx/index.jsx";
 import nav from "../../../../config/Navigation";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const AltNavBar = () => {
+const AltNavBar = (props) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const toggleMenuIsOpen = () =>
@@ -49,6 +49,22 @@ const AltNavBar = () => {
                 </Link>
               </li>
             ))}
+
+            <li
+              key="10"
+              id="login"
+              role="menuitem"
+              tabIndex="0"
+              className="nav-item"
+            >
+              <Link
+                activeClass="active"
+                onClick={props.click}
+                style={{ cursor: "pointer" }}
+              >
+                <p className="navLink">LOGIN</p>
+              </Link>
+            </li>
           </NavList>
           <div className="nav nav--right">
             <ToggleModeIcon />

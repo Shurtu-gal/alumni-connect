@@ -24,12 +24,6 @@ export default {
 
     {
       id: "login",
-      name: "LOGIN",
-      link: "/login",
-    },
-
-    {
-      id: "register",
       name: "REGISTER",
       link: "/register",
     },

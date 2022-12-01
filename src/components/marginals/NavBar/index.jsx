@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NavList, Nav, MenuButton, Contain } from "./style";
 import Logo from "../../shared/Logo";
 import { ToggleModeIcon } from "../../shared";
 import MobileNavList from "./MobileNavList.jsx/index.jsx";
+import { login } from "../../../App";
 
 const NavBar = () => {
+  const { isLogin, setLogin } = useContext(login);
+
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const toggleMenuIsOpen = () =>
     menuIsOpen ? setMenuIsOpen(false) : setMenuIsOpen(true);
+
+  const handlelogout = () => {
+    setLogin(false);
+  };
 
   return (
     <div
@@ -48,8 +55,8 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
-                Login
+              <NavLink className="nav-link" to="/" onClick={handlelogout}>
+                Logout
               </NavLink>
             </li>
           </NavList>
