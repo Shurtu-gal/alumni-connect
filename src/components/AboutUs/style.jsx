@@ -7,6 +7,7 @@ export const Section = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--text-color-primary);
 `;
 
 export const AboutContent = styled.div`

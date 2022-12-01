@@ -8,8 +8,8 @@ let darkMode = createContext("false", () => {});
 let login = createContext("false", () => {});
 
 const App = () => {
-  const [isDarkMode, setDarkMode] = useState(true);
-  const [isLogin, setLogin] = useState(true);
+  const [isDarkMode, setDarkMode] = useState(false);
+  const [isLogin, setLogin] = useState(false);
 
   const handleToggle = () => {
     setDarkMode((curr) => !curr);

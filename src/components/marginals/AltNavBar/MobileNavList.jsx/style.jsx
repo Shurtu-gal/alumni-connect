@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 const fadeDown = keyframes`
     0% {
@@ -15,6 +15,7 @@ export const NavList = styled.ul`
   position: absolute;
   width: 100%;
   background-color: var(--background-primary);
+  color: var(--text-color-primary);
   height: 50vh;
   display: flex;
   padding: 12px 34px;

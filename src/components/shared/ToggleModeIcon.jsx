@@ -9,7 +9,7 @@ const properties = {
     cx: 12,
     cy: 3,
     opacity: 0,
-    fill: "black",
+    fill: "#f7f7f7",
   },
   sun: {
     r: 5,
@@ -17,7 +17,7 @@ const properties = {
     cx: 30,
     cy: 0,
     opacity: 1,
-    fill: "#f7f7f7",
+    fill: "black",
   },
 
   springConfig: { mass: 8, tension: 200, friction: 35 },
@@ -27,7 +27,7 @@ const ToggleModeIcon = () => {
   const { isDarkMode, handleToggle } = useContext(darkMode);
 
   const { r, transform, cx, cy, opacity, fill } =
-    properties[isDarkMode ? "moon" : "sun"];
+    properties[isDarkMode ? "sun" : "moon"];
 
   const svgContainerProps = useSpring({
     transform,

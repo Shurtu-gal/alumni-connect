@@ -11,6 +11,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--text-color-primary);
 
   .nav--right {
     display: flex;
