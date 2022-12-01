@@ -1,0 +1,10 @@
+.ReviewChart{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ReviewChart iframe{
+    margin-bottom: 2px;
+    border-radius: 10px;
+}

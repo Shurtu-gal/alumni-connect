@@ -1,4 +1,11 @@
 .RightSide{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    align-items: stretch;
 }
+.RightSide>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} 
