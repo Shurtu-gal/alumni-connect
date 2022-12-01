@@ -34,11 +34,20 @@ const Content = styled.div`
   justify-content: center;
 `;
 
+const Name = styled.p`
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 3em;
+  margin-bottom: 1.5em;
+`;
+
 const Card = (props) => {
   return (
     <Wrapper key={props.id}>
       <Profile src={props.src} alt={props.alt} />
       <Content>{props.desc}</Content>
+      <Name> - {props.name}</Name>
     </Wrapper>
   );
 };

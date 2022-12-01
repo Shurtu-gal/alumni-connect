@@ -32,6 +32,7 @@ const Mentors = ({ id }) => {
               desc={elem.desc}
               key={elem.id}
               id={elem.id}
+              name={elem.name}
             ></Card>
           </SwiperSlide>
         ))}
