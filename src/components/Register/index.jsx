@@ -4,7 +4,7 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
 } from "firebase/auth";
-import { collection, addDoc, getDocs, onSnapshot } from "firebase/firestore";
+import { collection, addDoc, getDocs, onSnapshot, setDoc, doc } from "firebase/firestore";
 import { login } from "../../App";
 // import { getFirestore } from 'firebase/firestore';
 import Avatar from "@mui/material/Avatar";
@@ -21,6 +21,10 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Section, Students } from "./style";
+
+// import {auth, database} from '../Firebase';
+// import {createUserWithEmailAndPassword} from 'firebase/auth';
+// import {collection, addDoc, getDocs, doc,setDoc}from 'firebase/firestore';
 
 function Copyright(props) {
   return (
@@ -40,10 +44,17 @@ const theme = createTheme();
 export default function SignIn(props) {
   const { isLogin, setLogin } = useContext(login);
 
+    const [email, setEmail] = useState('');
+     const [password, setPassword] = useState('');
+     const [name, setName] = useState('');
+     const [institute, setInstitute] = useState('');
+     const [interest, setInterest]=useState('');
+     const [points, setPoint]=useState(0);
+
   const collectionRef = collection(database, "users");
   const collectionRef2 = collection(database, "mentors");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const email = data.get("email");
@@ -51,6 +62,26 @@ export default function SignIn(props) {
     const name = data.get("name");
     const institute = data.get("institute");
     const interest = data.get("interest");
+    const points = 0;
+    
+      setDoc(doc(database,"users",email), {
+           name: name,
+           institute: institute,
+           email: email,
+           password: password,
+           points: 0,
+           interest: interest
+      })
+      .then(()=>{
+           alert('Data Added');
+      })
+      .catch((error)=>{
+           alert(error.message);
+      });
+
+      createUserWithEmailAndPassword(auth, email, password)
+          .then(console.log("User Created"))
+          .catch(error=>alert(error.message));
   };
 
   return (
