@@ -10,7 +10,7 @@ export const Section = styled.div`
   justify-content: space-between;
 
   h1{
-    color = var(--text-color-primary);
+    color = var(--text-color-primary) !important;
   }
 
   h3{
@@ -27,4 +27,9 @@ export const Section = styled.div`
 export const RegisterButton = styled.p`
   padding: 0.8em 3em;
   background-color: var(--background-tertiary);
+`;
+
+export const Students = styled.div`
+  background-color: var(--background-primary);
+  width: auto;
 `;

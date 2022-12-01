@@ -1,7 +1,8 @@
 import React, { createContext, useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { NavBar, AltNavBar } from "./components";
-import { ContactUs, Home, Mentors, Partners, LandingPage } from "./pages";
+import { ContactUs, Home, Mentors, LandingPage, Connect } from "./pages";
+import Pricing from "./pages/Pricing";
 
 let darkMode = createContext("false", () => {});
 let login = createContext("false", () => {});
@@ -31,7 +32,8 @@ const App = () => {
             <Route exact path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/mentors" element={<Mentors />} />
-            <Route path="/partners" element={<Partners />} />
+            <Route path="/connect" element={<Connect />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
         )}

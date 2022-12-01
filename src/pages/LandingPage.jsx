@@ -29,6 +29,7 @@ const LandingPage = () => {
       <Mentors id="mentors" />
       <Register id="register" />
       <Footer id="contact" />
+
       {modalIsOpen && <Login onCancel={cancelHandler} />}
       {modalIsOpen && <Backdrop onCancel={cancelHandler} />}
     </>
