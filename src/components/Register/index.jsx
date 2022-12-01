@@ -84,6 +84,28 @@ export default function SignIn(props) {
           .catch(error=>alert(error.message));
   };
 
+  const getStudents=async()=>{
+    console.log('getStudents');
+    getDocs(collectionRef).then((response)=>{
+         console.log(
+              response.docs.map((item)=>{
+                   return (item.data());
+              })
+              // response
+         )
+    })
+  }
+  const getMentors=()=>{
+    console.log('getMentors');
+    getDocs(collectionRef2).then((response)=>{
+         console.log(
+              response.docs.map((item)=>{
+                   return (item.data());
+              })
+         )
+    })
+}
+
   return (
     <Section id="id">
       <Students>
@@ -190,6 +212,8 @@ export default function SignIn(props) {
           </Container>
         </ThemeProvider>
       </Students>
+      <Button onClick={getStudents}>getStudents</Button><br />
+      <Button onClick={getMentors}>getMentors</Button><br />
     </Section>
   );
 }
