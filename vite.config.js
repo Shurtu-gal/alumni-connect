@@ -12,5 +12,4 @@ export default defineConfig({
       includeAbsolute: false,
     },
   },
-  base: "/vite-deploy-demo/",
 });
