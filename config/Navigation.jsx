@@ -17,15 +17,9 @@ export default {
       link: "/mentors",
     },
     {
-      id: "contactus",
+      id: "contact",
       name: "CONTACT US",
       link: "/contactus",
-    },
-
-    {
-      id: "login",
-      name: "LOGIN",
-      link: "/login",
     },
 
     {

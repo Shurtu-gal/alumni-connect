@@ -1,7 +1,7 @@
 import React from "react";
 
-const Partners = () => {
+const Connect = () => {
   return <div className="Project">Partners</div>;
 };
 
-export default Partners;
+export default Connect;
