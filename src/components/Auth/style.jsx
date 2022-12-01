@@ -15,8 +15,3 @@ export const Modal = styled.div`
     color: var(--text-color-primary);
   }
 `;
-
-export const RegisterButton = styled.p`
-  padding: 0.8em 3em;
-  background-color: var(--background-tertiary);
-`;

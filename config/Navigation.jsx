@@ -17,13 +17,13 @@ export default {
       link: "/mentors",
     },
     {
-      id: "contactus",
+      id: "contact",
       name: "CONTACT US",
       link: "/contactus",
     },
 
     {
-      id: "login",
+      id: "register",
       name: "REGISTER",
       link: "/register",
     },
