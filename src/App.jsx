@@ -15,10 +15,10 @@ const App = () => {
     setDarkMode((curr) => !curr);
   };
 
-  useEffect(() => {
-    const nodes = Array.from(document.querySelectorAll("*"));
-    nodes.forEach((node) => node.classList.toggle("change"));
-  }, [isDarkMode]);
+  // useEffect(() => {
+  //   const nodes = Array.from(document.querySelectorAll("*"));
+  //   nodes.forEach((node) => node.classList.toggle("change"));
+  // }, [isDarkMode]);
 
   return (
     <login.Provider value={{ isLogin, setLogin }}>

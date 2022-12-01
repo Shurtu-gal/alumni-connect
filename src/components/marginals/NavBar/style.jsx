@@ -7,7 +7,7 @@ export const Contain = styled(Container)`
 `;
 
 export const Nav = styled.nav`
-  padding: 1.5em 0;
+  padding: 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

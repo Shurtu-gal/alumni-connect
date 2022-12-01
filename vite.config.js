@@ -7,5 +7,10 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1600,
   },
+  template: {
+    transformAssetUrls: {
+      includeAbsolute: false,
+    },
+  },
   base: "/vite-deploy-demo/",
 });
