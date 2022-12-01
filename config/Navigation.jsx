@@ -23,7 +23,7 @@ export default {
     },
 
     {
-      id: "login",
+      id: "register",
       name: "REGISTER",
       link: "/register",
     },

@@ -5,6 +5,7 @@ import AboutUs from "../components/AboutUs";
 import Login from "../components/Auth/index";
 import { AltNavBar } from "../components";
 import Backdrop from "../components/Backdrop";
+import Register from "../components/Register";
 
 const LandingPage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const LandingPage = () => {
       <HeroSection id="home" />
       <AboutUs id="aboutus" />
       <Mentors id="mentors" />
+      <Register id="register" />
       {modalIsOpen && <Login onCancel={cancelHandler} />}
       {modalIsOpen && <Backdrop onCancel={cancelHandler} />}
     </>
